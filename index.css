@@ -5,8 +5,9 @@
 }
 :root{
     --grey: #838383;
-    --green: rgb(215, 255, 234);
-    --darkgreen: rgb(3, 131, 88);
+    --green: #e7fff3;
+    --mediumgreen:rgb(102, 156, 138);
+    --darkgreen: #038358;
     --font: ;
 }
 body{
@@ -16,25 +17,36 @@ body{
     width: 850px;
     /* filter: drop-shadow(5px 5px 15px var(--darkgreen)); */
 }
+header{
+    background-image: url("./images/bg-header-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    background-color: var(--mediumgreen);
+}
 main{
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    /* gap: 30px; */
+    gap: 20px;
+    /* background-color: var(--mediumgreen); */
     
 }
 section{
     /* margin: 15px 10px; */
-    padding: 10px 30px;
+    padding: 15px 30px;
     display: flex;
+    background-color: snow;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 3px 5px 10px var(--darkgreen);
+    /* box-shadow: 3px 5px 10px var(--mediumgreen); */
 }
 h2{
     color: black;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 26px;
     
 }
 h3{
@@ -49,7 +61,19 @@ h4{
 h5{
     color: var(--grey);
     font-size: 12px;
-    line-height: 22px;
+    line-height: 18px;
+}
+.new{
+    color: white;
+    background-color: var(--darkgreen);
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+.featured{
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    padding: 2px 5px;
 }
 .deets{
     display: flex;
@@ -57,8 +81,8 @@ h5{
     align-items: center;
 }
 .profile{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -66,6 +90,7 @@ h5{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    align-items: center;
 }
 .conditions{
     display: flex;
@@ -75,7 +100,7 @@ h5{
 .qualifications{
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 10px;
 }
 
 .qualifications h4{
