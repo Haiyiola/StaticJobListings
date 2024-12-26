@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --grey: #838383;
+    --green: rgb(215, 255, 234);
+    --darkgreen: rgb(3, 131, 88);
+    --font: ;
+}
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    /* filter: drop-shadow(5px 5px 15px var(--darkgreen)); */
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    
+}
+section{
+    /* margin: 15px 10px; */
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 5px 10px var(--darkgreen);
+}
+h2{
+    color: black;
+    font-size: 20px;
+    line-height: 28px;
+    
+}
+h3{
+    color: var(--darkgreen);
+    font-size: 13px;
+    
+}
+h4{
+    color: var(--darkgreen);
+    font-size: 15px;
+}
+h5{
+    color: var(--grey);
+    font-size: 12px;
+    line-height: 22px;
+}
+.deets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile{
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.profile-name{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.conditions{
+    display: flex;
+    flex-direction: row;   
+    gap: 12px;
+}
+.qualifications{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.qualifications h4{
+    background-color: var(--green);
+    padding: 5px 10px;
+    line-height: 25px;
+    border-radius: 3px;
+}
