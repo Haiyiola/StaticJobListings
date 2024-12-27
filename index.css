@@ -5,31 +5,34 @@
 }
 :root{
     --grey: #838383;
-    --green: #e7fff3;
-    --mediumgreen:rgb(102, 156, 138);
-    --darkgreen: #038358;
+    --green: #eefeff;
+    --mediumgreen:#a1e9ee;
+    --darkgreen: #32bdc7;
     --font: ;
 }
 body{
-    margin: auto;
+    margin: 20px auto;
+    /* margin: 30px 0px; */
     display: flex;
     flex-direction: column;
-    width: 850px;
+    width: 950px;
     /* filter: drop-shadow(5px 5px 15px var(--darkgreen)); */
 }
-header{
-    background-image: url("./images/bg-header-desktop.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .header{
+    width: 950px;
+    height: 100px;
+}
+header{
     background-color: var(--mediumgreen);
 }
 main{
     padding: 30px;
     display: flex;
     flex-direction: column;
+    background-color: var(--green);
     gap: 20px;
+    justify-content: center;
+    align-items: center;
     /* background-color: var(--mediumgreen); */
     
 }
@@ -40,29 +43,40 @@ section{
     background-color: snow;
     flex-direction: row;
     justify-content: space-between;
+    width: 800px;
     align-items: center;
-    /* box-shadow: 3px 5px 10px var(--mediumgreen); */
+    /* box-shadow: 0px 2px 5px 0px var(--mediumgreen); */
+    filter: drop-shadow(0px 3px 10px var(--mediumgreen));
 }
 h2{
     color: black;
     font-size: 20px;
     line-height: 26px;
-    
+    font-weight: 700;
+}
+h2:hover{
+    color: var(--darkgreen);
 }
 h3{
     color: var(--darkgreen);
     font-size: 13px;
-    
+    font-weight: 500;
 }
 h4{
     color: var(--darkgreen);
     font-size: 15px;
+    font-weight: 600;
 }
 h5{
     color: var(--grey);
     font-size: 12px;
     line-height: 18px;
+    font-weight: 500;
 }
+/* ul{
+    display: flex;
+    flex-direction: row;
+} */
 .new{
     color: white;
     background-color: var(--darkgreen);
@@ -108,4 +122,12 @@ h5{
     padding: 5px 10px;
     line-height: 25px;
     border-radius: 3px;
+    cursor: pointer;
+}
+.qualifications h4:hover{
+    color: var(--green);
+    background-color: var(--darkgreen);
+}
+.top{
+    border-left: 3px solid var(--darkgreen);
 }
