@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "JosefinSans-Regular.ttf";
+    src: url("./JosefinSans-Regular.ttf");
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,15 +12,13 @@
     --green: #eefeff;
     --mediumgreen:#a1e9ee;
     --darkgreen: #32bdc7;
-    --font: ;
+    --font: "JosefinSans-Regular.ttf";
 }
 body{
     margin: 20px auto;
-    /* margin: 30px 0px; */
     display: flex;
     flex-direction: column;
     width: 950px;
-    /* filter: drop-shadow(5px 5px 15px var(--darkgreen)); */
 }
 .header{
     width: 950px;
@@ -49,6 +51,7 @@ section{
     filter: drop-shadow(0px 3px 10px var(--mediumgreen));
 }
 h2{
+    font-family: var(--font);
     color: black;
     font-size: 20px;
     line-height: 26px;
@@ -58,16 +61,19 @@ h2:hover{
     color: var(--darkgreen);
 }
 h3{
+    font-family: var(--font);
     color: var(--darkgreen);
     font-size: 13px;
     font-weight: 500;
 }
 h4{
+    font-family: var(--font);
     color: var(--darkgreen);
     font-size: 15px;
     font-weight: 600;
 }
 h5{
+    font-family: var(--font);
     color: var(--grey);
     font-size: 12px;
     line-height: 18px;
@@ -80,14 +86,14 @@ h5{
 .new{
     color: white;
     background-color: var(--darkgreen);
-    border-radius: 4px;
-    padding: 2px 5px;
+    border-radius: 20px;
+    padding: 2px 10px;
 }
 .featured{
     color: white;
     background-color: black;
-    border-radius: 4px;
-    padding: 2px 5px;
+    border-radius: 20px;
+    padding: 2px 10px;
 }
 .deets{
     display: flex;
@@ -130,4 +136,75 @@ h5{
 }
 .top{
     border-left: 3px solid var(--darkgreen);
+}
+
+
+@media screen and (max-width: 800px) {
+    body{
+        width: 450px;
+    }
+    .header{
+        width: 420px;
+        height: 60px;
+    }
+    section{
+        padding: 10px 35px;
+        width: 400px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+    }
+    .deets{
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .profile{
+        margin-top: -30px;
+        margin-right: 0px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-name{
+        margin: 5px 0px;
+    }
+    .conditions{
+        margin-top: 5px;
+    }
+    .qualifications{
+        margin: 5px 0px;
+        border-top: 1px solid var(--grey);
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+    h5{
+        font-family: var(--font);
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 600;
+    }
+    h2{
+        margin: 5px 0px;
+        font-family: var(--font);
+        font-size: 24px;
+        line-height: 29px;
+        font-family: 700;
+    }
+    h3{
+        font-family: var(--font);
+        font-family: 22px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+    .qualifications h4{
+        font-family: var(--font);
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px 15px;
+        font-weight: 600;
+        border-radius: 4px;
+    }
 }
